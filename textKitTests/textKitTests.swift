@@ -11,14 +11,29 @@ import XCTest
 
 class textKitTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func testPanString() {
+        let fixtureFileUrl = NSBundle.mainBundle().URLForResource("Text.rtf", withExtension: nil)!
+        let options = [NSDocumentTypeDocumentAttribute: NSRTFTextDocumentType]
+        if let fixtureString = try? NSMutableAttributedString(URL: fixtureFileUrl, options: options, documentAttributes: nil) {
+            var effectiveRange = NSRange()
+            
+            let vc : ViewController
+            vc = ViewController()
+            
+            let textView = vc.textView
+            textView.attributedText = fixtureString
+            let pan = UIPanGestureRecognizer(target: self, action: #selector(vc.panned(_:)))
+            
+           textView.addGestureRecognizer(pan)
+            
+            let attribute = fixtureString.attributesAtIndex(0, effectiveRange: &effectiveRange)
+            
+            XCTAssertTrue(attribute.keys.contains(NSBackgroundColorAttributeName))
+            
+        }
+  
     }
     
     func testExample() {

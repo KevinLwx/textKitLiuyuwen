@@ -14,6 +14,7 @@
 		95674A691D47223C00C4A1B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95674A671D47223C00C4A1B6 /* LaunchScreen.storyboard */; };
 		95674A741D47223C00C4A1B6 /* textKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95674A731D47223C00C4A1B6 /* textKitTests.swift */; };
 		95674A7F1D47223C00C4A1B6 /* textKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95674A7E1D47223C00C4A1B6 /* textKitUITests.swift */; };
+		95674A8D1D47255A00C4A1B6 /* Text.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 95674A8C1D47255A00C4A1B6 /* Text.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		95674A7A1D47223C00C4A1B6 /* textKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = textKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95674A7E1D47223C00C4A1B6 /* textKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textKitUITests.swift; sourceTree = "<group>"; };
 		95674A801D47223C00C4A1B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95674A8C1D47255A00C4A1B6 /* Text.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = Text.rtf; path = ../textKit/Text.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		95674A721D47223C00C4A1B6 /* textKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				95674A8C1D47255A00C4A1B6 /* Text.rtf */,
 				95674A731D47223C00C4A1B6 /* textKitTests.swift */,
 				95674A751D47223C00C4A1B6 /* Info.plist */,
 			);
@@ -232,6 +235,7 @@
 				95674A691D47223C00C4A1B6 /* LaunchScreen.storyboard in Resources */,
 				95674A661D47223C00C4A1B6 /* Assets.xcassets in Resources */,
 				95674A641D47223C00C4A1B6 /* Main.storyboard in Resources */,
+				95674A8D1D47255A00C4A1B6 /* Text.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
